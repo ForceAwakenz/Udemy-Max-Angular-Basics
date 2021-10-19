@@ -1,3 +1,11 @@
 .btn {
     margin-bottom: 15px;
 }
+
+p.warning {
+    color: salmon;
+}
+
+p.success {
+    color: green;
+}
