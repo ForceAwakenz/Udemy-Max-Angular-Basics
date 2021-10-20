@@ -9,3 +9,7 @@ p.warning {
 p.success {
     color: green;
 }
+
+.btn {
+    margin-top: 15px;
+}
