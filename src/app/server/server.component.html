@@ -1,1 +1,4 @@
-<p>The Server Component</p>
+<p [class]="getServerStatus()">The Server is {{getServerStatus()}}</p>
+<p *ngIf="serverStatus === 'online' " [ngStyle]="{'background-color': color || 'lightblue'}" >{{fetching}}</p>
+<p *ngIf="serverStatus === 'online' " [ngStyle]="{backgroundColor: color || '#999'}" >{{loading}}</p>
+<hr>
