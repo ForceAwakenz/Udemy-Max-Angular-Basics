@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Assign2Component implements OnInit {
   allowed = false;
   trackedClicks = [];
-  counter = 0;
+  // counter = 0;
 
   constructor() { }
 
@@ -16,8 +16,10 @@ export class Assign2Component implements OnInit {
   }
 
   onBtnClick() {
-    this.allowed = this.allowed ? false : true;
-    this.trackedClicks.push(++this.counter);
+    // this.allowed = this.allowed ? false : true;
+    this.allowed = !this.allowed;
+    // this.trackedClicks.push(++this.counter);
+    this.trackedClicks.push(new Date());
   }
 
   setBackground() {
