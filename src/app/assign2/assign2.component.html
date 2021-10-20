@@ -1,0 +1,7 @@
+<button class="btn" (click)="onBtnClick()" >Show Details</button>
+<p *ngIf="allowed" >Password: Swordfish</p>
+<p 
+*ngFor="let entrie of trackedClicks" 
+[ngStyle]="{backgroundColor: entrie > 5 ? 'blue' : ''}"
+[ngClass]="{selected: entrie > 5 ? 'blue' : ''}"
+>{{entrie}}</p>
