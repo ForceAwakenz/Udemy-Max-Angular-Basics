@@ -3,8 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-server',
   templateUrl: './server.component.html',
-  // styles: ['.online {color: green;} .offline {color: salmon;}']
+  styles: [
+    `.serverAccept {
+      font-weight: 700;
+    }
+    `
+  ]
 })
+// '.online {color: green;} .offline {color: salmon;}', 
+
+
 export class ServerComponent {
   serverId: number = 10;
   serverStatus: string;

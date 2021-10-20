@@ -15,6 +15,11 @@ export class ServersComponent implements OnInit {
   messageClass = 'warning';
   serverName = 'myServer';
   serverCreated = false;
+  servers = [
+    'Test Server Paris',
+    'Test Server Roma'
+  ]
+
   constructor() { }
 
   ngOnInit() {
@@ -24,6 +29,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
+    this.servers.push(this.serverName);
     this.serverCreated = true;
     this.serverCreationStatus = `Server ${this.serverName} was created!`;
     this.messageClass = 'success';
